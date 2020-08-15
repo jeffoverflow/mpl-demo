@@ -1,6 +1,6 @@
-
-
-MPLModule('Build', CFG)
+MPLPostStep('always') {
+  echo "Build stage PostStep"
+}
 
 echo "Build stage"
 
