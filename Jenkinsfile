@@ -3,11 +3,13 @@
 
 pipeline {
 	agent {
-	  label 'megawise-gis'
+		label 'megawise-gis'
 	}
 	stages {
 		stage ('Build') {
-			MPLModule()
+			steps {
+				MPLModule()
+			}
 		}
 	}
 }
