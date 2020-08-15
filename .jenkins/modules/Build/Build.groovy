@@ -4,4 +4,4 @@ MPLPostStep('always') {
 
 echo "Build stage"
 
-MPLModule('Test Build')
+MPLModule('Test Build', CFG)
