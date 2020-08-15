@@ -1,5 +1,7 @@
 echo "Build stage"
 
+MPLModule('Test Build')
+
 MPLPostStep('always') {
-  MPLModule('Test Build', CFG)
+  echo "Build Stage PostStep"
 }
