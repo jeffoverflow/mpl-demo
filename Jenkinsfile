@@ -11,6 +11,17 @@ pipeline {
 				MPLModule()
 			}
 		}
+		post {
+	        always {
+	            MPLPostStepsRun('always')
+	        }
+	        success {
+	            MPLPostStepsRun('success')
+	        }
+	        failure {
+	            MPLPostStepsRun('failure')
+	        }
+	    }
 	}
 	post {
         always {
