@@ -1,4 +1,4 @@
-MPLPostStep('always') {
+MPLPostStepRun('always') {
   echo "Build Stage PostStep"
 }
 
