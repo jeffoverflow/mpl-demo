@@ -9,12 +9,10 @@ pipeline {
 		stage ('Build') {
 			steps {
 				MPLModule()
+				MPLPostStep('always') {
+				  echo "Build Stage PostStep"
+				}
 			}
-		}
-	}
-	post {
-		always {
-			MPLPostStepsRun('always')
 		}
 	}
 }
