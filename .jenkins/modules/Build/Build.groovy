@@ -2,7 +2,7 @@ MPLPostStep('always') {
   echo "Build stage PostStep"
 }
 
-MPLModule('Maven Build', CFG)
+MPLModule('Build', CFG)
 
 echo "Build stage"
 
