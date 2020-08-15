@@ -1,6 +1,13 @@
 // MPL-based pipeline
 @Library('mpl') _
 
-MPLPipeline {
-	agent_label = 'megawise-gis'
+pipeline {
+	agent {
+	  label 'megawise-gis'
+	}
+	stages {
+		stage ('Build') {
+			MPLModule()
+		}
+	}
 }
