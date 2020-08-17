@@ -1,8 +1,6 @@
 // MPL-based pipeline
 @Library('mpl') _
 
-def mpl = MPLPipelineConfig([:])
-
 pipeline {
 	agent {
 		label 'megawise-gis'
@@ -14,15 +12,4 @@ pipeline {
 			}
 		}
 	}
-	post {
-        always {
-            MPLPostStepsRun('always')
-        }
-        success {
-            MPLPostStepsRun('success')
-        }
-        failure {
-            MPLPostStepsRun('failure')
-        }
-    }
 }
