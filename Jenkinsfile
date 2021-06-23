@@ -5,6 +5,7 @@ pipeline {
 	agent {
 		label 'megawise-gis'
 	}
+
 	stages {
 		stage ('Build') {
 			steps {
@@ -12,6 +13,7 @@ pipeline {
 			}
 		}
 	}
+
 	post {
         always {
             MPLPostStepsRun('always')
